@@ -3,7 +3,7 @@ class LightBoxPagSeguro {
 	private $token    = '';
 	private $email    = '';
 	private $currency = "BRL";
-	private $url      = "https://ws.pagseguro.uol.com.br/v2/checkout";
+	private $url      = "https://ws.sandbox.pagseguro.uol.com.br/v2/checkout";
     public function __construct() {}
     public function go(){
 		$data['token']            = $this->token;

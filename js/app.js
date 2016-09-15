@@ -11,6 +11,20 @@
                     $('#buy').submit();
                 });
             });
+        },
+        MyPagSeguroLightBox: function(obj){
+            PagSeguroLightbox(
+                {
+                    code: obj.code.value
+                },
+                {
+                    success : function(transactionCode) {
+                        alert("success - " + transactionCode);
+                },
+                    abort : function() {
+                        alert("abort");
+                }
+            });
         }
     };
     $(document).ready(function() {
