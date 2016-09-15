@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PagSeguro Lightbox Example</title>
+</head>
+<body>
+	<h1>Produto de Teste</h1>
+	<p>R$ 299,99</p>
+	<button id="send-request">Comprar</button>
+	<form id="buy" action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this);return false;">
+		<input type="hidden" name="code" id="code" value="" />
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+</html>
